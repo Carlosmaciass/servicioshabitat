@@ -1,0 +1,57 @@
+---
+
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+}
+
+const { title = 'Servicios Hábitat' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/a-blanco.png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta name="generator" content={Astro.generator} />
+	
+    <title>{title}</title>
+	 <!-- Google Fonts: Mulish -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+	
+   <Header />
+    <main>
+      <slot />
+    </main>
+	<Footer />
+	<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('landing-habitat-41ac61c577b1780a3628', 'UA-109517912-1').createForm();</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ecedbfab-877c-491b-b3f8-2cfc2ad698e5-loader.js" ></script>
+  </body>
+</html>
+
+<style is:global>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+	  font-family: 'Mulish', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  }
+  svg.swiper-navigation-icon {
+    display: none;
+}
+</style>

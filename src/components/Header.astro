@@ -1,0 +1,107 @@
+<header id="main-header">
+        <div class="container">
+            <div class="content-header">
+                <div class="logo-header">
+                    <a href="/"><img
+                            src="/LOGO.svg" alt="logo"></a>
+                </div>
+                <div class="btn-header">
+                    <a href="#primer-paso">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+</header>
+<style>
+   /*------------HEADER AND FOOTER-------------*/
+#rd-button-mgqs77hs.bricks--component-button {
+    border-radius: 30px!important;
+}
+
+.btn-wpp-footer {
+  display: none;
+}
+header#site-header {
+  display: none;
+}
+div#top-bar-wrap {
+  display: none;
+}
+#main-header {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  height: auto;
+  z-index: 9999;
+  width: 100%;
+  padding-top: 4%;
+}
+.content-header {
+  display: flex;
+  gap: 30%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 31%;
+}
+.btn-header a {
+  color: #fff;
+  background-color: #248f74;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 4px 25px;
+  padding-left: 25px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.logo-header {
+  width: 18%;
+}
+@media (width < 1550px) {
+  .logo-header {
+    width: 24%;
+  }
+}
+@media (width < 875px) {
+  .content-header {
+    gap: 30%;
+    padding-left: 0%;
+    justify-content: space-around;
+  }
+  #main-header {
+    padding-top: 5%;
+  }
+}
+@media (width < 500px) {
+  .btn-wpp-footer {
+    display: flex;
+    background: #248f74;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+  }
+  .btn-wpp-footer a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 0px;
+  }
+  
+  .btn-header {
+    display: none;
+  }
+  .logo-header {
+    width: 40%;
+  }
+  .content-header {
+    padding-left: 0;
+    padding-top: 15%;
+  }
+}
+    
+</style>

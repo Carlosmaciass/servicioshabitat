@@ -1,0 +1,56 @@
+---
+
+interface Props {
+    imagen: {
+        url: string;
+    };
+    content: string;
+}
+
+const { imagen, content } = Astro.props;
+
+---
+
+<li class="item-list-residencia">
+  <img src={imagen.url} alt="ICON" />
+  <p>{content}</p>
+</li>
+
+<style>
+li.item-list-residencia {
+  display: flex;
+  gap: 20px;
+  border: 3px solid #ff8532;
+  border-radius: 10px;
+  padding: 3% 4%;
+}
+li.item-list-residencia img {
+  width: 14%;
+}
+li.item-list-residencia p {
+  color: #18786c;
+  line-height: 21px;
+  font-size: 21px;
+  margin: 0;
+  font-weight: 500;
+}
+@media (width < 875px) {
+  li.item-list-residencia {
+    align-items: center;
+  }
+}
+@media (width < 500px) {
+  
+  li.item-list-residencia p {
+    color: #18786c;
+    line-height: 17px;
+    font-size: 16px;
+    margin: 0;
+  }
+  li.item-list-residencia img {
+    width: 20%;
+  }
+  
+}
+</style>
+
