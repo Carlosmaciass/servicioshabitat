@@ -619,6 +619,10 @@ import ListaResidencia from "../components/ListaResidencia.astro";
     .content-list-wpp {
       width: 100%;
     }
+    .item-residencia:nth-child(1) .content-list-wpp {
+     
+      padding-top: 72%;
+    }
     ul.list-residencia li {
       align-items: center;
     }
@@ -629,6 +633,14 @@ import ListaResidencia from "../components/ListaResidencia.astro";
       flex-direction: column;
       row-gap: 100px;
       padding-top: 7%;
+    }
+  }
+
+  @media (width < 700px) {
+    
+    .item-residencia:nth-child(1) .content-list-wpp {
+     
+      padding-top: 72%;
     }
   }
   @media (width < 500px) {
@@ -662,6 +674,9 @@ import ListaResidencia from "../components/ListaResidencia.astro";
       row-gap: 50px;
       padding-top: 7%;
     }
+   .item-residencia:nth-child(1) .content-list-wpp {
+      padding-top: 70%;
+    }
   }
   @media (width < 325px) {
     .item-residencia h3 {
@@ -682,6 +697,9 @@ import ListaResidencia from "../components/ListaResidencia.astro";
       font-weight: 900;
       position: relative;
       padding-left: 61px;
+    }
+    .item-residencia:nth-child(1) .content-list-wpp {
+      padding-top: 80%;
     }
   }
 
